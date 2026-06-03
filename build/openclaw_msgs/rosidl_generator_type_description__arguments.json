@@ -1,0 +1,7 @@
+{
+  "package_name": "openclaw_msgs",
+  "output_dir": "/workspace/build/openclaw_msgs/rosidl_generator_type_description/openclaw_msgs",
+  "idl_tuples": [
+    "/workspace/build/openclaw_msgs/rosidl_adapter/openclaw_msgs:msg/TaskStatus.idl"
+  ]
+}

@@ -1,0 +1,267 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f36a4d819dc0d33cc061.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "openclaw_msgs__py",
+					"jsonFile" : "directory-openclaw_msgs__py-810051228196c274594d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/workspace/build/openclaw_msgs/openclaw_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "openclaw_msgs__rs",
+					"jsonFile" : "directory-openclaw_msgs__rs-0928781ed381686893d1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/workspace/build/openclaw_msgs/openclaw_msgs__rs",
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "openclaw_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_openclaw_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_openclaw_msgs_egg-56eb7adce8d9854ba980.json",
+					"name" : "ament_cmake_python_build_openclaw_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_sync_openclaw_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_sync_openclaw_msgs-de1a0586e2de03cb719f.json",
+					"name" : "ament_cmake_python_sync_openclaw_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openclaw_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openclaw_msgs-a45326affdf0d36e807e.json",
+					"name" : "openclaw_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openclaw_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openclaw_msgs__cpp-fdd53715b7ff90985b18.json",
+					"name" : "openclaw_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "openclaw_msgs__py::@9cf48923f1442cfef948",
+					"jsonFile" : "target-openclaw_msgs__py-8756677037fbf5dfa73c.json",
+					"name" : "openclaw_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openclaw_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openclaw_msgs__rosidl_generator_c-386d172aedb2e81cf665.json",
+					"name" : "openclaw_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openclaw_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openclaw_msgs__rosidl_generator_py-158f41c265c39b4af0d0.json",
+					"name" : "openclaw_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openclaw_msgs__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openclaw_msgs__rosidl_generator_type_description-1225fc56a205765032a7.json",
+					"name" : "openclaw_msgs__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openclaw_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openclaw_msgs__rosidl_typesupport_c-d39e51fea181ff1fbd1d.json",
+					"name" : "openclaw_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openclaw_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openclaw_msgs__rosidl_typesupport_cpp-26fcc41b307190137ac0.json",
+					"name" : "openclaw_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openclaw_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openclaw_msgs__rosidl_typesupport_fastrtps_c-03180c94c5a309b53216.json",
+					"name" : "openclaw_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openclaw_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openclaw_msgs__rosidl_typesupport_fastrtps_cpp-92dd07f5205565e3cb6b.json",
+					"name" : "openclaw_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openclaw_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openclaw_msgs__rosidl_typesupport_introspection_c-fc2e3ad93d481c48a849.json",
+					"name" : "openclaw_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openclaw_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openclaw_msgs__rosidl_typesupport_introspection_cpp-e491ad49eec268c66e80.json",
+					"name" : "openclaw_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "openclaw_msgs__rs::@a193d4933bd8908ae1ff",
+					"jsonFile" : "target-openclaw_msgs__rs-4b4956d7e752b0a422db.json",
+					"name" : "openclaw_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openclaw_msgs_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openclaw_msgs_s__rosidl_typesupport_c-95e6bc544b2cc47cf515.json",
+					"name" : "openclaw_msgs_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openclaw_msgs_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openclaw_msgs_s__rosidl_typesupport_fastrtps_c-9c41e57eb0e06e166fd9.json",
+					"name" : "openclaw_msgs_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openclaw_msgs_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openclaw_msgs_s__rosidl_typesupport_introspection_c-095d72ffb92705e9f663.json",
+					"name" : "openclaw_msgs_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openclaw_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openclaw_msgs_uninstall-5345453d00d805a3cd14.json",
+					"name" : "openclaw_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-2ac589d64190c07c68c9.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspace/build/openclaw_msgs",
+		"source" : "/workspace/openclaw_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

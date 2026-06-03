@@ -1,0 +1,338 @@
+[0.000000] (-) TimerEvent: {}
+[0.000068] (openclaw) JobQueued: {'identifier': 'openclaw', 'dependencies': OrderedDict()}
+[0.000241] (openclaw_monitor) JobQueued: {'identifier': 'openclaw_monitor', 'dependencies': OrderedDict()}
+[0.000386] (openclaw_msgs) JobQueued: {'identifier': 'openclaw_msgs', 'dependencies': OrderedDict()}
+[0.000507] (openclaw) JobStarted: {'identifier': 'openclaw'}
+[0.004588] (openclaw_monitor) JobStarted: {'identifier': 'openclaw_monitor'}
+[0.006591] (openclaw_msgs) JobStarted: {'identifier': 'openclaw_msgs'}
+[0.099871] (-) TimerEvent: {}
+[0.190202] (openclaw_msgs) JobProgress: {'identifier': 'openclaw_msgs', 'progress': 'cmake'}
+[0.190495] (openclaw_msgs) Command: {'cmd': ['/usr/bin/cmake', '/workspace/openclaw_msgs', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/workspace/install/openclaw_msgs'], 'cwd': '/workspace/build/openclaw_msgs', 'env': OrderedDict({'HOSTNAME': 'f6ed61fe4cd2', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'rolling', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/rolling', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/build/openclaw_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1'}), 'shell': False}
+[0.199940] (-) TimerEvent: {}
+[0.230305] (openclaw_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.265252] (openclaw_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.275905] (openclaw_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300014] (-) TimerEvent: {}
+[0.328959] (openclaw_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.334648] (openclaw_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.334812] (openclaw_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.335062] (openclaw_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.341001] (openclaw_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399775] (openclaw_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.400075] (-) TimerEvent: {}
+[0.400530] (openclaw) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/workspace/build/openclaw/build', '--no-deps', 'symlink_data'], 'cwd': '/workspace/build/openclaw', 'env': {'HOSTNAME': 'f6ed61fe4cd2', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'rolling', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/rolling', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/build/openclaw', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspace/build/openclaw/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/openclaw/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1'}, 'shell': False}
+[0.401735] (openclaw_monitor) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/workspace/build/openclaw_monitor/build', '--no-deps', 'symlink_data'], 'cwd': '/workspace/build/openclaw_monitor', 'env': {'HOSTNAME': 'f6ed61fe4cd2', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'rolling', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/rolling', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/build/openclaw_monitor', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspace/build/openclaw_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/openclaw_monitor/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1'}, 'shell': False}
+[0.405157] (openclaw_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.405324] (openclaw_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.405594] (openclaw_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.407731] (openclaw_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.8.7 (/opt/ros/rolling/share/ament_cmake/cmake)\n'}
+[0.500174] (-) TimerEvent: {}
+[0.535714] (openclaw) StdoutLine: {'line': b'running develop\n'}
+[0.536398] (openclaw_monitor) StdoutLine: {'line': b'running develop\n'}
+[0.542011] (openclaw_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.8.1 (/opt/ros/rolling/share/rosidl_default_generators/cmake)\n'}
+[0.545043] (openclaw_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.566394] (openclaw_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.587562] (openclaw_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 5.2.0 (/opt/ros/rolling/share/rosidl_adapter/cmake)\n'}
+[0.589349] (openclaw_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.9.2 (/opt/ros/rolling/share/std_msgs/cmake)\n'}
+[0.596893] (openclaw_monitor) StdoutLine: {'line': b'running egg_info\n'}
+[0.597016] (openclaw_monitor) StdoutLine: {'line': b'creating openclaw_monitor.egg-info\n'}
+[0.597107] (openclaw) StdoutLine: {'line': b'running egg_info\n'}
+[0.597163] (openclaw) StdoutLine: {'line': b'creating openclaw.egg-info\n'}
+[0.600245] (-) TimerEvent: {}
+[0.602441] (openclaw_monitor) StdoutLine: {'line': b'writing openclaw_monitor.egg-info/PKG-INFO\n'}
+[0.602574] (openclaw_monitor) StdoutLine: {'line': b'writing dependency_links to openclaw_monitor.egg-info/dependency_links.txt\n'}
+[0.602699] (openclaw_monitor) StdoutLine: {'line': b'writing entry points to openclaw_monitor.egg-info/entry_points.txt\n'}
+[0.602765] (openclaw_monitor) StdoutLine: {'line': b'writing requirements to openclaw_monitor.egg-info/requires.txt\n'}
+[0.602820] (openclaw_monitor) StdoutLine: {'line': b'writing top-level names to openclaw_monitor.egg-info/top_level.txt\n'}
+[0.602868] (openclaw_monitor) StdoutLine: {'line': b"writing manifest file 'openclaw_monitor.egg-info/SOURCES.txt'\n"}
+[0.603120] (openclaw) StdoutLine: {'line': b'writing openclaw.egg-info/PKG-INFO\n'}
+[0.603285] (openclaw) StdoutLine: {'line': b'writing dependency_links to openclaw.egg-info/dependency_links.txt\n'}
+[0.603385] (openclaw) StdoutLine: {'line': b'writing entry points to openclaw.egg-info/entry_points.txt\n'}
+[0.603459] (openclaw) StdoutLine: {'line': b'writing requirements to openclaw.egg-info/requires.txt\n'}
+[0.603514] (openclaw) StdoutLine: {'line': b'writing top-level names to openclaw.egg-info/top_level.txt\n'}
+[0.603597] (openclaw) StdoutLine: {'line': b"writing manifest file 'openclaw.egg-info/SOURCES.txt'\n"}
+[0.614708] (openclaw_monitor) StdoutLine: {'line': b"reading manifest file 'openclaw_monitor.egg-info/SOURCES.txt'\n"}
+[0.614938] (openclaw) StdoutLine: {'line': b"reading manifest file 'openclaw.egg-info/SOURCES.txt'\n"}
+[0.615053] (openclaw_monitor) StdoutLine: {'line': b"writing manifest file 'openclaw_monitor.egg-info/SOURCES.txt'\n"}
+[0.615322] (openclaw) StdoutLine: {'line': b"writing manifest file 'openclaw.egg-info/SOURCES.txt'\n"}
+[0.621146] (openclaw_monitor) StdoutLine: {'line': b'running build_ext\n'}
+[0.621265] (openclaw_monitor) StdoutLine: {'line': b'Creating /workspace/install/openclaw_monitor/lib/python3.12/site-packages/openclaw-monitor.egg-link (link to .)\n'}
+[0.621540] (openclaw_monitor) StdoutLine: {'line': b'Installing openclaw_monitor script to /workspace/install/openclaw_monitor/bin\n'}
+[0.621712] (openclaw_monitor) StdoutLine: {'line': b'\n'}
+[0.621766] (openclaw_monitor) StdoutLine: {'line': b'Installed /workspace/build/openclaw_monitor\n'}
+[0.621885] (openclaw) StdoutLine: {'line': b'running build_ext\n'}
+[0.621964] (openclaw) StdoutLine: {'line': b'Creating /workspace/install/openclaw/lib/python3.12/site-packages/openclaw.egg-link (link to .)\n'}
+[0.622023] (openclaw_monitor) StdoutLine: {'line': b'running symlink_data\n'}
+[0.622066] (openclaw_monitor) StdoutLine: {'line': b'creating /workspace/install/openclaw_monitor/share/ament_index\n'}
+[0.622096] (openclaw_monitor) StdoutLine: {'line': b'creating /workspace/install/openclaw_monitor/share/ament_index/resource_index\n'}
+[0.622125] (openclaw_monitor) StdoutLine: {'line': b'creating /workspace/install/openclaw_monitor/share/ament_index/resource_index/packages\n'}
+[0.622155] (openclaw_monitor) StdoutLine: {'line': b'symbolically linking /workspace/build/openclaw_monitor/resource/openclaw_monitor -> /workspace/install/openclaw_monitor/share/ament_index/resource_index/packages\n'}
+[0.622200] (openclaw_monitor) StdoutLine: {'line': b'symbolically linking /workspace/build/openclaw_monitor/package.xml -> /workspace/install/openclaw_monitor/share/openclaw_monitor\n'}
+[0.622231] (openclaw) StdoutLine: {'line': b'Installing openclaw_agent script to /workspace/install/openclaw/bin\n'}
+[0.622339] (openclaw) StdoutLine: {'line': b'\n'}
+[0.622375] (openclaw) StdoutLine: {'line': b'Installed /workspace/build/openclaw\n'}
+[0.622416] (openclaw) StdoutLine: {'line': b'running symlink_data\n'}
+[0.622464] (openclaw) StdoutLine: {'line': b'creating /workspace/install/openclaw/share/ament_index\n'}
+[0.622516] (openclaw) StdoutLine: {'line': b'creating /workspace/install/openclaw/share/ament_index/resource_index\n'}
+[0.622546] (openclaw) StdoutLine: {'line': b'creating /workspace/install/openclaw/share/ament_index/resource_index/packages\n'}
+[0.622599] (openclaw) StdoutLine: {'line': b'symbolically linking /workspace/build/openclaw/resource/openclaw -> /workspace/install/openclaw/share/ament_index/resource_index/packages\n'}
+[0.622648] (openclaw) StdoutLine: {'line': b'symbolically linking /workspace/build/openclaw/package.xml -> /workspace/install/openclaw/share/openclaw\n'}
+[0.622693] (openclaw) StdoutLine: {'line': b'symbolically linking /workspace/build/openclaw/openclaw.launch.py -> /workspace/install/openclaw/share/openclaw\n'}
+[0.639508] (openclaw_monitor) CommandEnded: {'returncode': 0}
+[0.647199] (openclaw_monitor) JobEnded: {'identifier': 'openclaw_monitor', 'rc': 0}
+[0.647790] (openclaw) CommandEnded: {'returncode': 0}
+[0.652349] (openclaw) JobEnded: {'identifier': 'openclaw', 'rc': 0}
+[0.674948] (openclaw_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.700326] (-) TimerEvent: {}
+[0.800436] (-) TimerEvent: {}
+[0.900580] (-) TimerEvent: {}
+[1.000725] (-) TimerEvent: {}
+[1.100835] (-) TimerEvent: {}
+[1.109538] (openclaw_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.200914] (-) TimerEvent: {}
+[1.301038] (-) TimerEvent: {}
+[1.372296] (openclaw_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.401111] (-) TimerEvent: {}
+[1.501231] (-) TimerEvent: {}
+[1.601376] (-) TimerEvent: {}
+[1.602462] (openclaw_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[1.633591] (openclaw_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.640593] (openclaw_msgs) StdoutLine: {'line': b'-- Configuring done (1.4s)\n'}
+[1.661032] (openclaw_msgs) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.662599] (openclaw_msgs) StderrLine: {'line': b'CMake Warning:\n'}
+[1.662679] (openclaw_msgs) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[1.662721] (openclaw_msgs) StderrLine: {'line': b'\n'}
+[1.662756] (openclaw_msgs) StderrLine: {'line': b'    CATKIN_INSTALL_INTO_PREFIX_ROOT\n'}
+[1.662790] (openclaw_msgs) StderrLine: {'line': b'    CATKIN_SYMLINK_INSTALL\n'}
+[1.662821] (openclaw_msgs) StderrLine: {'line': b'\n'}
+[1.662851] (openclaw_msgs) StderrLine: {'line': b'\n'}
+[1.667808] (openclaw_msgs) StdoutLine: {'line': b'-- Build files have been written to: /workspace/build/openclaw_msgs\n'}
+[1.672598] (openclaw_msgs) CommandEnded: {'returncode': 0}
+[1.672917] (openclaw_msgs) JobProgress: {'identifier': 'openclaw_msgs', 'progress': 'build'}
+[1.673290] (openclaw_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/openclaw_msgs', '--', '-j32', '-l32'], 'cwd': '/workspace/build/openclaw_msgs', 'env': OrderedDict({'HOSTNAME': 'f6ed61fe4cd2', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'rolling', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/rolling', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/build/openclaw_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1'}), 'shell': False}
+[1.701450] (-) TimerEvent: {}
+[1.707316] (openclaw_msgs) StdoutLine: {'line': b'[  5%] Generating type hashes for ROS interfaces\n'}
+[1.707411] (openclaw_msgs) StdoutLine: {'line': b'[  5%] Generating Rust code for ROS interfaces\n'}
+[1.801544] (-) TimerEvent: {}
+[1.810802] (openclaw_msgs) StdoutLine: {'line': b'[  5%] Built target openclaw_msgs__rosidl_generator_type_description\n'}
+[1.817195] (openclaw_msgs) StdoutLine: {'line': b'[  8%] Generating C code for ROS interfaces\n'}
+[1.824602] (openclaw_msgs) StdoutLine: {'line': b'[ 11%] Generating C++ code for ROS interfaces\n'}
+[1.826869] (openclaw_msgs) StdoutLine: {'line': b'[ 11%] Built target openclaw_msgs__rs\n'}
+[1.901625] (-) TimerEvent: {}
+[1.942761] (openclaw_msgs) StdoutLine: {'line': b'[ 11%] Built target openclaw_msgs__cpp\n'}
+[1.943888] (openclaw_msgs) StdoutLine: {'line': b'[ 17%] Building C object CMakeFiles/openclaw_msgs__rosidl_generator_c.dir/rosidl_generator_c/openclaw_msgs/msg/detail/task_status__type_support.c.o\n'}
+[1.943937] (openclaw_msgs) StdoutLine: {'line': b'[ 14%] Building C object CMakeFiles/openclaw_msgs__rosidl_generator_c.dir/rosidl_generator_c/openclaw_msgs/msg/detail/task_status__description.c.o\n'}
+[1.944395] (openclaw_msgs) StdoutLine: {'line': b'[ 20%] Building C object CMakeFiles/openclaw_msgs__rosidl_generator_c.dir/rosidl_generator_c/openclaw_msgs/msg/detail/task_status__functions.c.o\n'}
+[1.973738] (openclaw_msgs) StdoutLine: {'line': b'[ 22%] Linking C shared library libopenclaw_msgs__rosidl_generator_c.so\n'}
+[1.998380] (openclaw_msgs) StdoutLine: {'line': b'[ 22%] Built target openclaw_msgs__rosidl_generator_c\n'}
+[2.001687] (-) TimerEvent: {}
+[2.004401] (openclaw_msgs) StdoutLine: {'line': b'[ 25%] Generating C introspection for ROS interfaces\n'}
+[2.004467] (openclaw_msgs) StdoutLine: {'line': b'[ 28%] Generating C++ type support for eProsima Fast-RTPS\n'}
+[2.004542] (openclaw_msgs) StdoutLine: {'line': b'[ 31%] Generating C++ type support dispatch for ROS interfaces\n'}
+[2.004587] (openclaw_msgs) StdoutLine: {'line': b'[ 37%] Generating C type support dispatch for ROS interfaces\n'}
+[2.004622] (openclaw_msgs) StdoutLine: {'line': b'[ 37%] Generating C++ introspection for ROS interfaces\n'}
+[2.005862] (openclaw_msgs) StdoutLine: {'line': b'[ 40%] Generating C type support for eProsima Fast-RTPS\n'}
+[2.101789] (-) TimerEvent: {}
+[2.112163] (openclaw_msgs) StdoutLine: {'line': b'[ 42%] Building CXX object CMakeFiles/openclaw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/openclaw_msgs/msg/task_status__type_support.cpp.o\n'}
+[2.119534] (openclaw_msgs) StdoutLine: {'line': b'[ 45%] Building CXX object CMakeFiles/openclaw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/openclaw_msgs/msg/task_status__type_support.cpp.o\n'}
+[2.128310] (openclaw_msgs) StdoutLine: {'line': b'[ 48%] Building CXX object CMakeFiles/openclaw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/openclaw_msgs/msg/detail/task_status__type_support.cpp.o\n'}
+[2.136007] (openclaw_msgs) StdoutLine: {'line': b'[ 51%] Building CXX object CMakeFiles/openclaw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/openclaw_msgs/msg/detail/dds_fastrtps/task_status__type_support.cpp.o\n'}
+[2.138247] (openclaw_msgs) StdoutLine: {'line': b'[ 54%] Linking CXX shared library libopenclaw_msgs__rosidl_typesupport_c.so\n'}
+[2.139804] (openclaw_msgs) StdoutLine: {'line': b'[ 57%] Building C object CMakeFiles/openclaw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/openclaw_msgs/msg/detail/task_status__type_support.c.o\n'}
+[2.143028] (openclaw_msgs) StdoutLine: {'line': b'[ 60%] Building CXX object CMakeFiles/openclaw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/openclaw_msgs/msg/detail/task_status__type_support_c.cpp.o\n'}
+[2.162540] (openclaw_msgs) StdoutLine: {'line': b'[ 62%] Linking C shared library libopenclaw_msgs__rosidl_typesupport_introspection_c.so\n'}
+[2.163023] (openclaw_msgs) StdoutLine: {'line': b'[ 62%] Built target openclaw_msgs__rosidl_typesupport_c\n'}
+[2.183973] (openclaw_msgs) StdoutLine: {'line': b'[ 62%] Built target openclaw_msgs__rosidl_typesupport_introspection_c\n'}
+[2.201844] (-) TimerEvent: {}
+[2.301930] (-) TimerEvent: {}
+[2.398229] (openclaw_msgs) StdoutLine: {'line': b'[ 65%] Linking CXX shared library libopenclaw_msgs__rosidl_typesupport_cpp.so\n'}
+[2.401991] (-) TimerEvent: {}
+[2.424892] (openclaw_msgs) StdoutLine: {'line': b'[ 65%] Built target openclaw_msgs__rosidl_typesupport_cpp\n'}
+[2.431488] (openclaw_msgs) StdoutLine: {'line': b'[ 68%] Linking CXX shared library libopenclaw_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[2.474346] (openclaw_msgs) StdoutLine: {'line': b'[ 68%] Built target openclaw_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.502056] (-) TimerEvent: {}
+[2.502555] (openclaw_msgs) StdoutLine: {'line': b'[ 71%] Linking CXX shared library libopenclaw_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[2.518508] (openclaw_msgs) StdoutLine: {'line': b'[ 74%] Linking CXX shared library libopenclaw_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.547805] (openclaw_msgs) StdoutLine: {'line': b'[ 74%] Built target openclaw_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.562240] (openclaw_msgs) StdoutLine: {'line': b'[ 74%] Built target openclaw_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.574065] (openclaw_msgs) StdoutLine: {'line': b'[ 74%] Built target openclaw_msgs\n'}
+[2.585476] (openclaw_msgs) StdoutLine: {'line': b'[ 77%] Generating Python code for ROS interfaces\n'}
+[2.602117] (-) TimerEvent: {}
+[2.702198] (-) TimerEvent: {}
+[2.729955] (openclaw_msgs) StdoutLine: {'line': b'[ 77%] Built target openclaw_msgs__py\n'}
+[2.742522] (openclaw_msgs) StdoutLine: {'line': b'[ 80%] Building C object CMakeFiles/openclaw_msgs__rosidl_generator_py.dir/rosidl_generator_py/openclaw_msgs/msg/_task_status_s.c.o\n'}
+[2.748963] (openclaw_msgs) StdoutLine: {'line': b'[ 80%] Built target ament_cmake_python_sync_openclaw_msgs\n'}
+[2.802264] (-) TimerEvent: {}
+[2.807213] (openclaw_msgs) StdoutLine: {'line': b'[ 82%] Linking C shared library libopenclaw_msgs__rosidl_generator_py.so\n'}
+[2.832370] (openclaw_msgs) StdoutLine: {'line': b'[ 82%] Built target openclaw_msgs__rosidl_generator_py\n'}
+[2.841957] (openclaw_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.842365] (openclaw_msgs) StdoutLine: {'line': b'creating openclaw_msgs.egg-info\n'}
+[2.844796] (openclaw_msgs) StdoutLine: {'line': b'[ 85%] Building C object CMakeFiles/openclaw_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/openclaw_msgs/_openclaw_msgs_s.ep.rosidl_typesupport_c.c.o\n'}
+[2.845160] (openclaw_msgs) StdoutLine: {'line': b'[ 88%] Building C object CMakeFiles/openclaw_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/openclaw_msgs/_openclaw_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\n'}
+[2.845827] (openclaw_msgs) StdoutLine: {'line': b'[ 91%] Building C object CMakeFiles/openclaw_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/openclaw_msgs/_openclaw_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\n'}
+[2.848191] (openclaw_msgs) StdoutLine: {'line': b'writing openclaw_msgs.egg-info/PKG-INFO\n'}
+[2.848287] (openclaw_msgs) StdoutLine: {'line': b'writing dependency_links to openclaw_msgs.egg-info/dependency_links.txt\n'}
+[2.848371] (openclaw_msgs) StdoutLine: {'line': b'writing top-level names to openclaw_msgs.egg-info/top_level.txt\n'}
+[2.848465] (openclaw_msgs) StdoutLine: {'line': b"writing manifest file 'openclaw_msgs.egg-info/SOURCES.txt'\n"}
+[2.865174] (openclaw_msgs) StdoutLine: {'line': b"reading manifest file 'openclaw_msgs.egg-info/SOURCES.txt'\n"}
+[2.865466] (openclaw_msgs) StdoutLine: {'line': b"writing manifest file 'openclaw_msgs.egg-info/SOURCES.txt'\n"}
+[2.881907] (openclaw_msgs) StdoutLine: {'line': b'[ 91%] Built target ament_cmake_python_build_openclaw_msgs_egg\n'}
+[2.902321] (-) TimerEvent: {}
+[2.903633] (openclaw_msgs) StdoutLine: {'line': b'[ 94%] Linking C shared module rosidl_generator_py/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_c.so\n'}
+[2.904165] (openclaw_msgs) StdoutLine: {'line': b'[ 97%] Linking C shared module rosidl_generator_py/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[2.909152] (openclaw_msgs) StdoutLine: {'line': b'[100%] Linking C shared module rosidl_generator_py/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[2.922992] (openclaw_msgs) StdoutLine: {'line': b'[100%] Built target openclaw_msgs_s__rosidl_typesupport_c\n'}
+[2.924711] (openclaw_msgs) StdoutLine: {'line': b'[100%] Built target openclaw_msgs_s__rosidl_typesupport_introspection_c\n'}
+[2.928289] (openclaw_msgs) StdoutLine: {'line': b'[100%] Built target openclaw_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[2.935674] (openclaw_msgs) CommandEnded: {'returncode': 0}
+[2.936201] (openclaw_msgs) JobProgress: {'identifier': 'openclaw_msgs', 'progress': 'install'}
+[2.941139] (openclaw_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/openclaw_msgs'], 'cwd': '/workspace/build/openclaw_msgs', 'env': OrderedDict({'HOSTNAME': 'f6ed61fe4cd2', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'rolling', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/rolling', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/build/openclaw_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1'}), 'shell': False}
+[2.946612] (openclaw_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.946741] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/ament_index/resource_index/rosidl_interfaces/openclaw_msgs\n'}
+[2.946911] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/msg/TaskStatus.json\n'}
+[2.947008] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs\n'}
+[2.947086] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg\n'}
+[2.947158] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.947226] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/task_status.h\n'}
+[2.947312] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail\n'}
+[2.947382] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__type_support.h\n'}
+[2.947449] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__functions.c\n'}
+[2.947548] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__functions.h\n'}
+[2.947653] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__description.c\n'}
+[2.947740] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__type_support.c\n'}
+[2.947826] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__struct.h\n'}
+[2.947959] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/environment/library_path.sh\n'}
+[2.948073] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/environment/library_path.dsv\n'}
+[2.948204] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_generator_c.so\n'}
+[2.948459] (openclaw_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_generator_c.so" to ""\n'}
+[2.948551] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs\n'}
+[2.948627] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg\n'}
+[2.948735] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.948912] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail\n'}
+[2.948964] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__rosidl_typesupport_fastrtps_c.h\n'}
+[2.949004] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[2.949096] (openclaw_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[2.949261] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs\n'}
+[2.949340] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg\n'}
+[2.949414] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.949469] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail\n'}
+[2.949500] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__rosidl_typesupport_introspection_c.h\n'}
+[2.949536] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__type_support.c\n'}
+[2.949569] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_introspection_c.so\n'}
+[2.949646] (openclaw_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[2.949703] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_c.so\n'}
+[2.949913] (openclaw_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_c.so" to ""\n'}
+[2.949960] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs\n'}
+[2.950016] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg\n'}
+[2.950048] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/task_status.hpp\n'}
+[2.950099] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[2.950184] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail\n'}
+[2.950230] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__struct.hpp\n'}
+[2.950307] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__type_support.hpp\n'}
+[2.950393] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__builder.hpp\n'}
+[2.950479] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__traits.hpp\n'}
+[2.950588] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs\n'}
+[2.950635] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg\n'}
+[2.950681] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.950767] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail\n'}
+[2.950815] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.950885] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/dds_fastrtps\n'}
+[2.950965] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.951230] (openclaw_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[2.951276] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs\n'}
+[2.951327] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg\n'}
+[2.951374] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail\n'}
+[2.951408] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__type_support.cpp\n'}
+[2.951458] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.951567] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[2.951837] (openclaw_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[2.951905] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_cpp.so\n'}
+[2.952092] (openclaw_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[2.952146] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/environment/pythonpath.sh\n'}
+[2.952224] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/environment/pythonpath.dsv\n'}
+[2.952453] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[2.952698] (openclaw_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[2.952753] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[2.952976] (openclaw_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[2.953024] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_c.so\n'}
+[2.953253] (openclaw_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_c.so" to ""\n'}
+[2.953302] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_generator_py.so\n'}
+[2.953526] (openclaw_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_generator_py.so" to ""\n'}
+[2.953659] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/ament_index/resource_index/rust_packages/openclaw_msgs\n'}
+[2.953751] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/rust\n'}
+[2.953803] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/rust/Cargo.toml\n'}
+[2.953884] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/rust/src\n'}
+[2.953936] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/rust/src/lib.rs\n'}
+[2.954019] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/rust/src/msg.rs\n'}
+[2.954100] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/rust/src/msg\n'}
+[2.954148] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/rust/src/msg/rmw.rs\n'}
+[2.954233] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/rust/build.rs\n'}
+[2.954333] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/msg/TaskStatus.idl\n'}
+[2.954429] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/msg/TaskStatus.msg\n'}
+[2.954547] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/ament_index/resource_index/package_run_dependencies/openclaw_msgs\n'}
+[2.954682] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/ament_index/resource_index/parent_prefix_path/openclaw_msgs\n'}
+[2.954791] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/environment/ament_prefix_path.sh\n'}
+[2.954896] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/environment/ament_prefix_path.dsv\n'}
+[2.954996] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/environment/path.sh\n'}
+[2.955100] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/environment/path.dsv\n'}
+[2.955194] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/local_setup.bash\n'}
+[2.955286] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/local_setup.fish\n'}
+[2.955377] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/local_setup.sh\n'}
+[2.955471] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/local_setup.zsh\n'}
+[2.955562] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/local_setup.dsv\n'}
+[2.955663] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/package.dsv\n'}
+[2.955782] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/ament_index/resource_index/packages/openclaw_msgs\n'}
+[2.955904] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_generator_cExport.cmake\n'}
+[2.956009] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.956117] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.956222] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.956327] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.956427] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.956531] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgs__rosidl_typesupport_cExport.cmake\n'}
+[2.956640] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.956745] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_generator_cppExport.cmake\n'}
+[2.956852] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.956952] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.957057] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.957163] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.957268] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[2.957372] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.957476] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_generator_pyExport.cmake\n'}
+[2.957576] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.957676] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs-0.1.0-py3.12.egg-info\n'}
+[2.957733] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs-0.1.0-py3.12.egg-info/PKG-INFO\n'}
+[2.957828] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs-0.1.0-py3.12.egg-info/SOURCES.txt\n'}
+[2.957918] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs-0.1.0-py3.12.egg-info/top_level.txt\n'}
+[2.958007] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs-0.1.0-py3.12.egg-info/dependency_links.txt\n'}
+[2.958114] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs\n'}
+[2.958164] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/__init__.py\n'}
+[2.958253] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[2.958300] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/_openclaw_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[2.958371] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[2.958418] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/py.typed\n'}
+[2.958475] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/_openclaw_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.958574] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/_openclaw_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.958673] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/msg\n'}
+[2.958726] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/msg/__init__.py\n'}
+[2.958819] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/msg/_task_status.py\n'}
+[2.958915] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/msg/_task_status_s.c\n'}
+[2.959006] (openclaw_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_c.so\n'}
+[2.980801] (openclaw_msgs) StdoutLine: {'line': b"Listing '/workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs'...\n"}
+[2.980874] (openclaw_msgs) StdoutLine: {'line': b"Compiling '/workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/__init__.py'...\n"}
+[2.980915] (openclaw_msgs) StdoutLine: {'line': b"Listing '/workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/msg'...\n"}
+[2.980951] (openclaw_msgs) StdoutLine: {'line': b"Compiling '/workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/msg/__init__.py'...\n"}
+[2.980983] (openclaw_msgs) StdoutLine: {'line': b"Compiling '/workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/msg/_task_status.py'...\n"}
+[2.983701] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[2.983848] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.983981] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.984118] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.984238] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.984362] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.984485] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.984605] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[2.984714] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgsConfig.cmake\n'}
+[2.984832] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgsConfig-version.cmake\n'}
+[2.984915] (openclaw_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/package.xml\n'}
+[2.986112] (openclaw_msgs) CommandEnded: {'returncode': 0}
+[2.995986] (openclaw_msgs) JobEnded: {'identifier': 'openclaw_msgs', 'rc': 0}
+[2.996323] (-) EventReactorShutdown: {}

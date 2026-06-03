@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: openclaw-monitor
+Version: 0.1.0
+Summary: OpenClaw Monitor: Lightweight task status observer
+Maintainer: OpenClaw Team
+Maintainer-email: dev@example.com
+License: MIT

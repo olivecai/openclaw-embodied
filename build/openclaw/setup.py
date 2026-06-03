@@ -1,0 +1,1 @@
+/workspace/openclaw/setup.py

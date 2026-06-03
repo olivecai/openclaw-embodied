@@ -1,0 +1,16 @@
+openclaw.launch.py
+package.xml
+setup.py
+openclaw/__init__.py
+openclaw/agent.py
+openclaw/prompts.py
+openclaw/ros_bridge.py
+openclaw/skill_loader.py
+openclaw.egg-info/PKG-INFO
+openclaw.egg-info/SOURCES.txt
+openclaw.egg-info/dependency_links.txt
+openclaw.egg-info/entry_points.txt
+openclaw.egg-info/requires.txt
+openclaw.egg-info/top_level.txt
+openclaw.egg-info/zip-safe
+resource/openclaw

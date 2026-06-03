@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "openclaw_msgs__py",
+		"source" : "/workspace/build/openclaw_msgs/openclaw_msgs__py"
+	}
+}

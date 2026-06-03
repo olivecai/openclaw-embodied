@@ -1,0 +1,19 @@
+{
+  "package_name": "openclaw_msgs",
+  "output_dir": "/workspace/build/openclaw_msgs/rosidl_typesupport_introspection_cpp/openclaw_msgs",
+  "template_dir": "/opt/ros/rolling/share/rosidl_typesupport_introspection_cpp/resource",
+  "idl_tuples": [
+    "/workspace/build/openclaw_msgs/rosidl_adapter/openclaw_msgs:msg/TaskStatus.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/rolling/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp",
+    "/opt/ros/rolling/lib/python3.12/site-packages/rosidl_typesupport_introspection_cpp/__init__.py",
+    "/opt/ros/rolling/share/rosidl_typesupport_introspection_cpp/resource/idl__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/rolling/share/rosidl_typesupport_introspection_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/rolling/share/rosidl_typesupport_introspection_cpp/resource/msg__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/rolling/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/rolling/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/rolling/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
+    "/workspace/build/openclaw_msgs/rosidl_adapter/openclaw_msgs/msg/TaskStatus.idl"
+  ]
+}

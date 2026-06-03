@@ -1,0 +1,6 @@
+{
+  "package_name": "openclaw_msgs",
+  "non_idl_tuples": [
+    "/workspace/openclaw_msgs:msg/TaskStatus.msg"
+  ]
+}

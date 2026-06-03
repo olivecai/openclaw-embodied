@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating openclaw.egg-info
+writing openclaw.egg-info/PKG-INFO
+writing dependency_links to openclaw.egg-info/dependency_links.txt
+writing entry points to openclaw.egg-info/entry_points.txt
+writing requirements to openclaw.egg-info/requires.txt
+writing top-level names to openclaw.egg-info/top_level.txt
+writing manifest file 'openclaw.egg-info/SOURCES.txt'
+reading manifest file 'openclaw.egg-info/SOURCES.txt'
+writing manifest file 'openclaw.egg-info/SOURCES.txt'
+running build_ext
+Creating /workspace/install/openclaw/lib/python3.12/site-packages/openclaw.egg-link (link to .)
+Installing openclaw_agent script to /workspace/install/openclaw/bin
+
+Installed /workspace/build/openclaw
+running symlink_data
+creating /workspace/install/openclaw/share/ament_index
+creating /workspace/install/openclaw/share/ament_index/resource_index
+creating /workspace/install/openclaw/share/ament_index/resource_index/packages
+symbolically linking /workspace/build/openclaw/resource/openclaw -> /workspace/install/openclaw/share/ament_index/resource_index/packages
+symbolically linking /workspace/build/openclaw/package.xml -> /workspace/install/openclaw/share/openclaw
+symbolically linking /workspace/build/openclaw/openclaw.launch.py -> /workspace/install/openclaw/share/openclaw

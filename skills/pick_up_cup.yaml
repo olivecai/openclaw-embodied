@@ -1,0 +1,9 @@
+name: pick_up_cup
+description: Use the robot arm to grasp and lift a cup safely.
+groot_prompt: "Execute a secure grasp of the cup with the manipulator and lift it gently."
+preconditions:
+  - cup visible
+  - arm free
+tags:
+  - manipulation
+  - grasp

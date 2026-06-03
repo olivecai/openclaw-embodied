@@ -1,0 +1,246 @@
+[0.184s] Invoking command in '/workspace/build/openclaw_msgs': /usr/bin/cmake /workspace/openclaw_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/workspace/install/openclaw_msgs
+[0.224s] -- The C compiler identification is GNU 13.3.0
+[0.259s] -- The CXX compiler identification is GNU 13.3.0
+[0.269s] -- Detecting C compiler ABI info
+[0.322s] -- Detecting C compiler ABI info - done
+[0.328s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.328s] -- Detecting C compile features
+[0.328s] -- Detecting C compile features - done
+[0.334s] -- Detecting CXX compiler ABI info
+[0.393s] -- Detecting CXX compiler ABI info - done
+[0.398s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.399s] -- Detecting CXX compile features
+[0.399s] -- Detecting CXX compile features - done
+[0.401s] -- Found ament_cmake: 2.8.7 (/opt/ros/rolling/share/ament_cmake/cmake)
+[0.535s] -- Found rosidl_default_generators: 1.8.1 (/opt/ros/rolling/share/rosidl_default_generators/cmake)
+[0.538s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.560s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.581s] -- Found rosidl_adapter: 5.2.0 (/opt/ros/rolling/share/rosidl_adapter/cmake)
+[0.583s] -- Found std_msgs: 5.9.2 (/opt/ros/rolling/share/std_msgs/cmake)
+[0.668s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.103s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.366s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.596s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[1.627s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.634s] -- Configuring done (1.4s)
+[1.654s] -- Generating done (0.0s)
+[1.656s] CMake Warning:
+[1.656s]   Manually-specified variables were not used by the project:
+[1.656s] 
+[1.656s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[1.656s]     CATKIN_SYMLINK_INSTALL
+[1.656s] 
+[1.656s] 
+[1.661s] -- Build files have been written to: /workspace/build/openclaw_msgs
+[1.666s] Invoked command in '/workspace/build/openclaw_msgs' returned '0': /usr/bin/cmake /workspace/openclaw_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/workspace/install/openclaw_msgs
+[1.667s] Invoking command in '/workspace/build/openclaw_msgs': /usr/bin/cmake --build /workspace/build/openclaw_msgs -- -j32 -l32
+[1.701s] [  5%] Generating type hashes for ROS interfaces
+[1.701s] [  5%] Generating Rust code for ROS interfaces
+[1.804s] [  5%] Built target openclaw_msgs__rosidl_generator_type_description
+[1.811s] [  8%] Generating C code for ROS interfaces
+[1.818s] [ 11%] Generating C++ code for ROS interfaces
+[1.820s] [ 11%] Built target openclaw_msgs__rs
+[1.936s] [ 11%] Built target openclaw_msgs__cpp
+[1.937s] [ 17%] Building C object CMakeFiles/openclaw_msgs__rosidl_generator_c.dir/rosidl_generator_c/openclaw_msgs/msg/detail/task_status__type_support.c.o
+[1.937s] [ 14%] Building C object CMakeFiles/openclaw_msgs__rosidl_generator_c.dir/rosidl_generator_c/openclaw_msgs/msg/detail/task_status__description.c.o
+[1.938s] [ 20%] Building C object CMakeFiles/openclaw_msgs__rosidl_generator_c.dir/rosidl_generator_c/openclaw_msgs/msg/detail/task_status__functions.c.o
+[1.967s] [ 22%] Linking C shared library libopenclaw_msgs__rosidl_generator_c.so
+[1.992s] [ 22%] Built target openclaw_msgs__rosidl_generator_c
+[1.998s] [ 25%] Generating C introspection for ROS interfaces
+[1.998s] [ 28%] Generating C++ type support for eProsima Fast-RTPS
+[1.998s] [ 31%] Generating C++ type support dispatch for ROS interfaces
+[1.998s] [ 37%] Generating C type support dispatch for ROS interfaces
+[1.998s] [ 37%] Generating C++ introspection for ROS interfaces
+[1.999s] [ 40%] Generating C type support for eProsima Fast-RTPS
+[2.106s] [ 42%] Building CXX object CMakeFiles/openclaw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/openclaw_msgs/msg/task_status__type_support.cpp.o
+[2.113s] [ 45%] Building CXX object CMakeFiles/openclaw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/openclaw_msgs/msg/task_status__type_support.cpp.o
+[2.122s] [ 48%] Building CXX object CMakeFiles/openclaw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/openclaw_msgs/msg/detail/task_status__type_support.cpp.o
+[2.129s] [ 51%] Building CXX object CMakeFiles/openclaw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/openclaw_msgs/msg/detail/dds_fastrtps/task_status__type_support.cpp.o
+[2.132s] [ 54%] Linking CXX shared library libopenclaw_msgs__rosidl_typesupport_c.so
+[2.133s] [ 57%] Building C object CMakeFiles/openclaw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/openclaw_msgs/msg/detail/task_status__type_support.c.o
+[2.136s] [ 60%] Building CXX object CMakeFiles/openclaw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/openclaw_msgs/msg/detail/task_status__type_support_c.cpp.o
+[2.156s] [ 62%] Linking C shared library libopenclaw_msgs__rosidl_typesupport_introspection_c.so
+[2.156s] [ 62%] Built target openclaw_msgs__rosidl_typesupport_c
+[2.177s] [ 62%] Built target openclaw_msgs__rosidl_typesupport_introspection_c
+[2.392s] [ 65%] Linking CXX shared library libopenclaw_msgs__rosidl_typesupport_cpp.so
+[2.418s] [ 65%] Built target openclaw_msgs__rosidl_typesupport_cpp
+[2.425s] [ 68%] Linking CXX shared library libopenclaw_msgs__rosidl_typesupport_introspection_cpp.so
+[2.468s] [ 68%] Built target openclaw_msgs__rosidl_typesupport_introspection_cpp
+[2.496s] [ 71%] Linking CXX shared library libopenclaw_msgs__rosidl_typesupport_fastrtps_c.so
+[2.512s] [ 74%] Linking CXX shared library libopenclaw_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.541s] [ 74%] Built target openclaw_msgs__rosidl_typesupport_fastrtps_c
+[2.556s] [ 74%] Built target openclaw_msgs__rosidl_typesupport_fastrtps_cpp
+[2.567s] [ 74%] Built target openclaw_msgs
+[2.579s] [ 77%] Generating Python code for ROS interfaces
+[2.723s] [ 77%] Built target openclaw_msgs__py
+[2.736s] [ 80%] Building C object CMakeFiles/openclaw_msgs__rosidl_generator_py.dir/rosidl_generator_py/openclaw_msgs/msg/_task_status_s.c.o
+[2.742s] [ 80%] Built target ament_cmake_python_sync_openclaw_msgs
+[2.801s] [ 82%] Linking C shared library libopenclaw_msgs__rosidl_generator_py.so
+[2.826s] [ 82%] Built target openclaw_msgs__rosidl_generator_py
+[2.835s] running egg_info
+[2.836s] creating openclaw_msgs.egg-info
+[2.838s] [ 85%] Building C object CMakeFiles/openclaw_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/openclaw_msgs/_openclaw_msgs_s.ep.rosidl_typesupport_c.c.o
+[2.838s] [ 88%] Building C object CMakeFiles/openclaw_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/openclaw_msgs/_openclaw_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[2.839s] [ 91%] Building C object CMakeFiles/openclaw_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/openclaw_msgs/_openclaw_msgs_s.ep.rosidl_typesupport_introspection_c.c.o
+[2.841s] writing openclaw_msgs.egg-info/PKG-INFO
+[2.842s] writing dependency_links to openclaw_msgs.egg-info/dependency_links.txt
+[2.842s] writing top-level names to openclaw_msgs.egg-info/top_level.txt
+[2.842s] writing manifest file 'openclaw_msgs.egg-info/SOURCES.txt'
+[2.858s] reading manifest file 'openclaw_msgs.egg-info/SOURCES.txt'
+[2.859s] writing manifest file 'openclaw_msgs.egg-info/SOURCES.txt'
+[2.875s] [ 91%] Built target ament_cmake_python_build_openclaw_msgs_egg
+[2.897s] [ 94%] Linking C shared module rosidl_generator_py/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_c.so
+[2.897s] [ 97%] Linking C shared module rosidl_generator_py/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_introspection_c.so
+[2.902s] [100%] Linking C shared module rosidl_generator_py/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_fastrtps_c.so
+[2.916s] [100%] Built target openclaw_msgs_s__rosidl_typesupport_c
+[2.918s] [100%] Built target openclaw_msgs_s__rosidl_typesupport_introspection_c
+[2.922s] [100%] Built target openclaw_msgs_s__rosidl_typesupport_fastrtps_c
+[2.929s] Invoked command in '/workspace/build/openclaw_msgs' returned '0': /usr/bin/cmake --build /workspace/build/openclaw_msgs -- -j32 -l32
+[2.934s] Invoking command in '/workspace/build/openclaw_msgs': /usr/bin/cmake --install /workspace/build/openclaw_msgs
+[2.940s] -- Install configuration: ""
+[2.940s] -- Installing: /workspace/install/openclaw_msgs/share/ament_index/resource_index/rosidl_interfaces/openclaw_msgs
+[2.940s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/msg/TaskStatus.json
+[2.940s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs
+[2.940s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg
+[2.940s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.941s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/task_status.h
+[2.941s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail
+[2.941s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__type_support.h
+[2.941s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__functions.c
+[2.941s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__functions.h
+[2.941s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__description.c
+[2.941s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__type_support.c
+[2.941s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__struct.h
+[2.941s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/environment/library_path.sh
+[2.941s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/environment/library_path.dsv
+[2.941s] -- Installing: /workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_generator_c.so
+[2.942s] -- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_generator_c.so" to ""
+[2.942s] -- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs
+[2.942s] -- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg
+[2.942s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.942s] -- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail
+[2.942s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__rosidl_typesupport_fastrtps_c.h
+[2.942s] -- Installing: /workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_fastrtps_c.so
+[2.942s] -- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[2.943s] -- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs
+[2.943s] -- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg
+[2.943s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.943s] -- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail
+[2.943s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__rosidl_typesupport_introspection_c.h
+[2.943s] -- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__type_support.c
+[2.943s] -- Installing: /workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_introspection_c.so
+[2.943s] -- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_introspection_c.so" to ""
+[2.943s] -- Installing: /workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_c.so
+[2.943s] -- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_c.so" to ""
+[2.943s] -- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs
+[2.943s] -- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg
+[2.943s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/task_status.hpp
+[2.943s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.943s] -- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail
+[2.944s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__struct.hpp
+[2.944s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__type_support.hpp
+[2.944s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__builder.hpp
+[2.944s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__traits.hpp
+[2.944s] -- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs
+[2.944s] -- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg
+[2.944s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.944s] -- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail
+[2.944s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__rosidl_typesupport_fastrtps_cpp.hpp
+[2.944s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/dds_fastrtps
+[2.944s] -- Installing: /workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.945s] -- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.945s] -- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs
+[2.945s] -- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg
+[2.945s] -- Up-to-date: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail
+[2.945s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__type_support.cpp
+[2.945s] -- Installing: /workspace/install/openclaw_msgs/include/openclaw_msgs/openclaw_msgs/msg/detail/task_status__rosidl_typesupport_introspection_cpp.hpp
+[2.945s] -- Installing: /workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_introspection_cpp.so
+[2.945s] -- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[2.945s] -- Installing: /workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_cpp.so
+[2.945s] -- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_typesupport_cpp.so" to ""
+[2.945s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/environment/pythonpath.sh
+[2.946s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/environment/pythonpath.dsv
+[2.946s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_fastrtps_c.so
+[2.946s] -- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[2.946s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_introspection_c.so
+[2.946s] -- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[2.946s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_c.so
+[2.947s] -- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_c.so" to ""
+[2.947s] -- Installing: /workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_generator_py.so
+[2.947s] -- Set non-toolchain portion of runtime path of "/workspace/install/openclaw_msgs/lib/libopenclaw_msgs__rosidl_generator_py.so" to ""
+[2.947s] -- Installing: /workspace/install/openclaw_msgs/share/ament_index/resource_index/rust_packages/openclaw_msgs
+[2.947s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/rust
+[2.947s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/rust/Cargo.toml
+[2.947s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/rust/src
+[2.947s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/rust/src/lib.rs
+[2.947s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/rust/src/msg.rs
+[2.947s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/rust/src/msg
+[2.947s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/rust/src/msg/rmw.rs
+[2.948s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/rust/build.rs
+[2.948s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/msg/TaskStatus.idl
+[2.948s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/msg/TaskStatus.msg
+[2.948s] -- Installing: /workspace/install/openclaw_msgs/share/ament_index/resource_index/package_run_dependencies/openclaw_msgs
+[2.948s] -- Installing: /workspace/install/openclaw_msgs/share/ament_index/resource_index/parent_prefix_path/openclaw_msgs
+[2.948s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/environment/ament_prefix_path.sh
+[2.948s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/environment/ament_prefix_path.dsv
+[2.948s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/environment/path.sh
+[2.948s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/environment/path.dsv
+[2.948s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/local_setup.bash
+[2.949s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/local_setup.fish
+[2.949s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/local_setup.sh
+[2.949s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/local_setup.zsh
+[2.949s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/local_setup.dsv
+[2.949s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/package.dsv
+[2.949s] -- Installing: /workspace/install/openclaw_msgs/share/ament_index/resource_index/packages/openclaw_msgs
+[2.949s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_generator_cExport.cmake
+[2.949s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_generator_cExport-noconfig.cmake
+[2.949s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[2.949s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.950s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.950s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.950s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgs__rosidl_typesupport_cExport.cmake
+[2.950s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[2.950s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_generator_cppExport.cmake
+[2.950s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.950s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.950s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.950s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.951s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgs__rosidl_typesupport_cppExport.cmake
+[2.951s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[2.951s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_generator_pyExport.cmake
+[2.951s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/export_openclaw_msgs__rosidl_generator_pyExport-noconfig.cmake
+[2.951s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs-0.1.0-py3.12.egg-info
+[2.951s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs-0.1.0-py3.12.egg-info/PKG-INFO
+[2.951s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs-0.1.0-py3.12.egg-info/SOURCES.txt
+[2.951s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs-0.1.0-py3.12.egg-info/top_level.txt
+[2.951s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs-0.1.0-py3.12.egg-info/dependency_links.txt
+[2.951s] -- Up-to-date: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs
+[2.951s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/__init__.py
+[2.952s] -- Up-to-date: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_fastrtps_c.so
+[2.952s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/_openclaw_msgs_s.ep.rosidl_typesupport_c.c
+[2.952s] -- Up-to-date: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_introspection_c.so
+[2.952s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/py.typed
+[2.952s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/_openclaw_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.952s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/_openclaw_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[2.952s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/msg
+[2.952s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/msg/__init__.py
+[2.952s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/msg/_task_status.py
+[2.952s] -- Installing: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/msg/_task_status_s.c
+[2.952s] -- Up-to-date: /workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/openclaw_msgs_s__rosidl_typesupport_c.so
+[2.974s] Listing '/workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs'...
+[2.974s] Compiling '/workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/__init__.py'...
+[2.974s] Listing '/workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/msg'...
+[2.974s] Compiling '/workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/msg/__init__.py'...
+[2.974s] Compiling '/workspace/install/openclaw_msgs/lib/python3.12/site-packages/openclaw_msgs/msg/_task_status.py'...
+[2.977s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/rosidl_cmake-extras.cmake
+[2.977s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.977s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[2.977s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[2.978s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.978s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.978s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.978s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[2.978s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgsConfig.cmake
+[2.978s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/cmake/openclaw_msgsConfig-version.cmake
+[2.978s] -- Installing: /workspace/install/openclaw_msgs/share/openclaw_msgs/package.xml
+[2.979s] Invoked command in '/workspace/build/openclaw_msgs' returned '0': /usr/bin/cmake --install /workspace/build/openclaw_msgs

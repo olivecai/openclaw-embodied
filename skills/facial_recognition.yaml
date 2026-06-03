@@ -1,0 +1,9 @@
+name: facial_recognition
+description: Identify and verify a human face using visual sensors.
+groot_prompt: "Analyze the camera feed to locate and recognize a human face."
+preconditions:
+  - camera active
+  - illumination sufficient
+tags:
+  - perception
+  - vision

@@ -1,0 +1,15 @@
+source;share/openclaw_monitor/hook/path.ps1
+source;share/openclaw_monitor/hook/path.dsv
+source;share/openclaw_monitor/hook/path.sh
+source;share/openclaw_monitor/hook/pythonpath.ps1
+source;share/openclaw_monitor/hook/pythonpath.dsv
+source;share/openclaw_monitor/hook/pythonpath.sh
+source;share/openclaw_monitor/hook/pythonscriptspath.ps1
+source;share/openclaw_monitor/hook/pythonscriptspath.dsv
+source;share/openclaw_monitor/hook/pythonscriptspath.sh
+source;share/openclaw_monitor/hook/ament_prefix_path.ps1
+source;share/openclaw_monitor/hook/ament_prefix_path.dsv
+source;share/openclaw_monitor/hook/ament_prefix_path.sh
+source;../../build/openclaw_monitor/share/openclaw_monitor/hook/pythonpath_develop.ps1
+source;../../build/openclaw_monitor/share/openclaw_monitor/hook/pythonpath_develop.dsv
+source;../../build/openclaw_monitor/share/openclaw_monitor/hook/pythonpath_develop.sh

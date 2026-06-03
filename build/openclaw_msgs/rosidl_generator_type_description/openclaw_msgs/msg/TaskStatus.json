@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "openclaw_msgs/msg/TaskStatus",
+      "fields": [
+        {
+          "name": "prompt",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "confidence",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "openclaw_msgs/msg/TaskStatus",
+      "hash_string": "RIHS01_0152803c537cf68eff332905f72c901150932c01be7b9e4379faa4aad15e8b08"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating openclaw_monitor.egg-info
+writing openclaw_monitor.egg-info/PKG-INFO
+writing dependency_links to openclaw_monitor.egg-info/dependency_links.txt
+writing entry points to openclaw_monitor.egg-info/entry_points.txt
+writing requirements to openclaw_monitor.egg-info/requires.txt
+writing top-level names to openclaw_monitor.egg-info/top_level.txt
+writing manifest file 'openclaw_monitor.egg-info/SOURCES.txt'
+reading manifest file 'openclaw_monitor.egg-info/SOURCES.txt'
+writing manifest file 'openclaw_monitor.egg-info/SOURCES.txt'
+running build_ext
+Creating /workspace/install/openclaw_monitor/lib/python3.12/site-packages/openclaw-monitor.egg-link (link to .)
+Installing openclaw_monitor script to /workspace/install/openclaw_monitor/bin
+
+Installed /workspace/build/openclaw_monitor
+running symlink_data
+creating /workspace/install/openclaw_monitor/share/ament_index
+creating /workspace/install/openclaw_monitor/share/ament_index/resource_index
+creating /workspace/install/openclaw_monitor/share/ament_index/resource_index/packages
+symbolically linking /workspace/build/openclaw_monitor/resource/openclaw_monitor -> /workspace/install/openclaw_monitor/share/ament_index/resource_index/packages
+symbolically linking /workspace/build/openclaw_monitor/package.xml -> /workspace/install/openclaw_monitor/share/openclaw_monitor

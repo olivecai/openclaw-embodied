@@ -1,0 +1,1 @@
+/workspace/build/openclaw/openclaw.launch.py

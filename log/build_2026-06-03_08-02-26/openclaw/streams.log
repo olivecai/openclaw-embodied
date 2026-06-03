@@ -1,0 +1,25 @@
+[0.401s] Invoking command in '/workspace/build/openclaw': PYTHONPATH=/workspace/build/openclaw/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/openclaw/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/build/openclaw/build --no-deps symlink_data
+[0.535s] running develop
+[0.597s] running egg_info
+[0.597s] creating openclaw.egg-info
+[0.603s] writing openclaw.egg-info/PKG-INFO
+[0.603s] writing dependency_links to openclaw.egg-info/dependency_links.txt
+[0.603s] writing entry points to openclaw.egg-info/entry_points.txt
+[0.603s] writing requirements to openclaw.egg-info/requires.txt
+[0.603s] writing top-level names to openclaw.egg-info/top_level.txt
+[0.603s] writing manifest file 'openclaw.egg-info/SOURCES.txt'
+[0.614s] reading manifest file 'openclaw.egg-info/SOURCES.txt'
+[0.615s] writing manifest file 'openclaw.egg-info/SOURCES.txt'
+[0.621s] running build_ext
+[0.621s] Creating /workspace/install/openclaw/lib/python3.12/site-packages/openclaw.egg-link (link to .)
+[0.622s] Installing openclaw_agent script to /workspace/install/openclaw/bin
+[0.622s] 
+[0.622s] Installed /workspace/build/openclaw
+[0.622s] running symlink_data
+[0.622s] creating /workspace/install/openclaw/share/ament_index
+[0.622s] creating /workspace/install/openclaw/share/ament_index/resource_index
+[0.622s] creating /workspace/install/openclaw/share/ament_index/resource_index/packages
+[0.622s] symbolically linking /workspace/build/openclaw/resource/openclaw -> /workspace/install/openclaw/share/ament_index/resource_index/packages
+[0.622s] symbolically linking /workspace/build/openclaw/package.xml -> /workspace/install/openclaw/share/openclaw
+[0.622s] symbolically linking /workspace/build/openclaw/openclaw.launch.py -> /workspace/install/openclaw/share/openclaw
+[0.647s] Invoked command in '/workspace/build/openclaw' returned '0': PYTHONPATH=/workspace/build/openclaw/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/openclaw/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/build/openclaw/build --no-deps symlink_data

@@ -1,0 +1,9 @@
+name: search_for_object
+description: Scan the environment and locate the requested object.
+groot_prompt: "Search the workspace using visual and spatial sensors to find the specified object."
+preconditions:
+  - sensors online
+  - area not occluded
+tags:
+  - perception
+  - search
