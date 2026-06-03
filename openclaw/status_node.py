@@ -14,6 +14,10 @@ from const import *
 class StatusNode(Node):
     '''
     Owner of this thread has 2 responsibilities:
+    1. Use method set_task to set the needed task
+    2. Poll evaluate to check status
+
+    Lifetime of this node is continual 
     '''
     def __init__(self, evaluation_mode: str = DEPLOY):
         super().__init__()
