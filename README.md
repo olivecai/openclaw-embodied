@@ -15,15 +15,14 @@ OpenClaw agent responsibilities:
 Jobs to be performed prior to the OpenClaw embodiment:
 1. Run `cd /home/${USER}/lerobot/ ; git pull;` 
 1. Run `cd /home/${USER}/openclaw-embodied/` 
-2. Run `conda activate lerobot` 
-2. Initialize the asynchronous server to host inferencing for the GR00t model by running `python -m lerobot.async_inference.policy_server   --host=0.0.0.0   --port=8080   --fps=30`
-3. In a new terminal, run `ssh kibub@kibub` and ask the user for the password. Then in the kibub shell run `conda activate lerobot`
+2. Initialize the asynchronous server to host inferencing for the GR00t model by running `conda run -n lerobot python -m lerobot.async_inference.policy_server   --host=0.0.0.0   --port=8080   --fps=30`
+3. In a new terminal, run `ssh kibub@kibub`.
 
 ## Inferencing responsibilities
 Jobs to be performed during the OpenClaw embodiment:
 
 ## Execute a skill on the robot
-1. To execute a skill on the robot: in the kibub shell session using top and wrist cameras: `python -m lerobot.async_inference.robot_client   --robot.type=bi_so_follower  --robot.left_arm_config.port=/dev/follower_left    --robot.right_arm_config.port=/dev/follower_right    --robot.top_cameras="{ top_realsense_color: {type: opencv, index_or_path: /dev/video4, width: 640, height: 480, fps: 30}, top_realsense_depth: {type: opencv, index_or_path: /dev/video2, width: 640, height: 480, fps: 30}, top_webcam: {type: opencv, index_or_path: /dev/video6, width: 640, height: 480, fps: 30}}"  --robot.right_arm_config.cameras="{ wrist_right: {type: opencv, index_or_path: /dev/wrist_right, width: 640, height: 480, fps: 30}}"   --robot.left_arm_config.cameras="{ wrist_left: {type: opencv, index_or_path: /dev/wrist_left, width: 640, height: 480, fps: 30}}"  --task=${TASK}   --server_address=10.145.8.86:8080   --policy_type=groot  --pretrained_name_or_path=${HF_USER}/${POLICY}-${REPO}   --policy_device=cuda   --actions_per_chunk=16 --debug_visualize_queue_size=true --robot.id=follower`
+1. To execute a skill on the robot: in the kibub shell session using top and wrist cameras: `conda run -n lerobot python -m lerobot.async_inference.robot_client   --robot.type=bi_so_follower  --robot.left_arm_config.port=/dev/follower_left    --robot.right_arm_config.port=/dev/follower_right    --robot.top_cameras="{ top_realsense_color: {type: opencv, index_or_path: /dev/video4, width: 640, height: 480, fps: 30}, top_realsense_depth: {type: opencv, index_or_path: /dev/video2, width: 640, height: 480, fps: 30}, top_webcam: {type: opencv, index_or_path: /dev/video6, width: 640, height: 480, fps: 30}}"  --robot.right_arm_config.cameras="{ wrist_right: {type: opencv, index_or_path: /dev/wrist_right, width: 640, height: 480, fps: 30}}"   --robot.left_arm_config.cameras="{ wrist_left: {type: opencv, index_or_path: /dev/wrist_left, width: 640, height: 480, fps: 30}}"  --task=${TASK}   --server_address=10.145.8.86:8080   --policy_type=groot  --pretrained_name_or_path=${HF_USER}/${POLICY}-${REPO}   --policy_device=cuda   --actions_per_chunk=16 --debug_visualize_queue_size=true --robot.id=follower`
 
 Usage for `python -m lerobot.async_inference.robot_client`:
 ```
@@ -44,8 +43,7 @@ robot_client.py [-h] [--config_path str] [--policy_type str] [--pretrained_name_
 ### Launch the asynchronous inference policy server to host the robot client:
 Open a new shell terminal and run the following:
 ```
-conda activate lerobot
-python -m lerobot.async_inference.policy_server   --host=0.0.0.0   --port=8080   --fps=30
+conda run -n lerobot  python -m lerobot.async_inference.policy_server   --host=0.0.0.0   --port=8080   --fps=30
 ```
 
 ### Evaluate the status of the task execution:

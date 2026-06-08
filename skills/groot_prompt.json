@@ -1,10 +1,10 @@
 {
     "pick-up-cup": {
         "task": "Pick up the cup using the cup handle",
-        "repo-id": "oliveoil8888/pick_up_the_cup"
+        "repo-id": "oliveoil8888/groot-pick_up_the_cup"
     },
     "knock-on-wood": {
         "task": "Knock on the wooden table",
-        "repo-id": "oliveoil8888/knock_on_wood"
+        "repo-id": "oliveoil8888/groot-knock_on_wood"
     }
 }
