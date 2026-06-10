@@ -1,11 +1,11 @@
 ---
 name: evaluate-status
-description: "Evaluate robot task progress from LeRobot observation API images."
+description: "Evaluate robot status and environment from LeRobot observation API images."
 ---
 
 # Evaluate Skill
 
-Use this skill when asked to inspect, monitor, or evaluate the embodied robot task using the LeRobot policy server observation API.
+Use this skill when asked to inspect, monitor, or evaluate the embodied robot task before, during, and after using the LeRobot policy server observation API. This skill is essential for visually confirming task progress, diagnosing issues, and providing feedback based on the robot's current state and surroundings.
 
 ## API
 
