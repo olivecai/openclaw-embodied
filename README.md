@@ -15,6 +15,7 @@ Jobs to be performed prior to the OpenClaw embodiment:
 1. Run `cd /home/${USER}/lerobot/ ; git pull origin main;` 
 1. Always execute scripts from the working directory `/home/${USER}/openclaw-embodied`: Run `cd /home/${USER}/openclaw-embodied/` 
 2. Run `export PROMPT_FILE="skills/robot-client/groot_prompt.json"`
+3. Run `export DEPLOY_GROOT_PROMPT_SCRIPT=robot-client/scripts/deploy_groot_prompt.sh`
 2. Initialize the asynchronous server to host inferencing for the GR00t model by running `conda run -n lerobot python -m lerobot.async_inference.policy_server   --host=0.0.0.0   --port=8080   --fps=30`
 
 ## Inferencing responsibilities
