@@ -30,7 +30,6 @@ When you invoke the pick-up-cup skill, it will:
 
 ```bash
 export SKILL="pick-up-cup" 
-export PROMPT_FILE="/openclaw/groot_prompt.json"
 export TASK=$(python3 -c "import json; d=json.load(open('$PROMPT_FILE')); print(d['$SKILL']['task'])")
 export REPO=$(python3 -c "import json; d=json.load(open('$PROMPT_FILE')); print(d['$SKILL']['repo-id'])")
 ```
@@ -38,7 +37,7 @@ export REPO=$(python3 -c "import json; d=json.load(open('$PROMPT_FILE')); print(
 Then deploy:
 
 ```bash
-bash /openclaw/deploy_groot_prompt.sh
+bash ./skills/robot-client/scripts/deploy_groot_prompt.sh
 ```
 
 

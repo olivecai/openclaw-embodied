@@ -26,6 +26,8 @@ GET /images/{key}
 ```
 
 The API is served from `policy_server.py` alongside the gRPC policy server. It exposes the latest raw observation received from the robot client.
+If the robot client is actively rolling out a policy, the gRPC server will continuously receive new observations and update the latest observation served by the HTTP API. Then, the agent only needs to query the API to get the most recent observation and evaluate the robot's status and environment based on the images and metadata in the observation.
+Else, a current observation and status can be acquired by running `./skills/robot-client/scripts/robot_status_snapshot.sh`, which triggers a single observation to the policy server.
 
 ## Workflow
 

@@ -1,25 +1,27 @@
 # openclaw-embodied
-Integrate OpenClaw agent with a robotic system. This repository contains a skills/ directory for OpenClaw to access, the LLM planner, a lightweight VLM for monitoring the success of the task, and ROS nodes for deploying messages. This code is designed to be robot and VLA agnostic.
 
 Instructions for OpenClaw Agent:
 
-USER=ocai
+## OpenClaw Agent Purpose
+Integrate OpenClaw agent with a robotic system: a dual SO101 arm system named "Kibub". This repository contains a skills/ directory for OpenClaw to access, the LLM planner, a lightweight VLM for monitoring the success of the task, and ROS nodes for deploying messages. This code is designed to be robot and VLA agnostic.
 
-In home/${USER}
-
-OpenClaw agent responsibilities:
+## OpenClaw agent responsibilities:
 1. Initialization responsibilities
 2. Inferencing responsibilities
 
 ## Initialization responsibilities
 Jobs to be performed prior to the OpenClaw embodiment:
-1. Run `cd /home/${USER}/lerobot/ ; git pull;` 
-1. Run `cd /home/${USER}/openclaw-embodied/` 
+1. Run `export USER=$(whoami)`
+1. Run `cd /home/${USER}/lerobot/ ; git pull origin main;` 
+1. Always execute scripts from the working directory `/home/${USER}/openclaw-embodied`: Run `cd /home/${USER}/openclaw-embodied/` 
+2. Run `export PROMPT_FILE="skills/robot-client/groot_prompt.json"`
 2. Initialize the asynchronous server to host inferencing for the GR00t model by running `conda run -n lerobot python -m lerobot.async_inference.policy_server   --host=0.0.0.0   --port=8080   --fps=30`
-3. In a new terminal, run `ssh kibub@kibub`.
 
 ## Inferencing responsibilities
 Jobs to be performed during the OpenClaw embodiment:
+
+## Check the status of the robot and its environment
+1. Get the current images and timestamp from the robot to see what tasks it can carry out by executing skill evaluate-status and running `./skills/robot-client/scripts/robot_status_snapshot.sh`
 
 ## Execute a skill on the robot
 1. To execute a skill on the robot: in the kibub shell session using top and wrist cameras: `conda run -n lerobot python -m lerobot.async_inference.robot_client   --robot.type=bi_so_follower  --robot.left_arm_config.port=/dev/follower_left    --robot.right_arm_config.port=/dev/follower_right    --robot.top_cameras="{ top_realsense_color: {type: opencv, index_or_path: /dev/video4, width: 640, height: 480, fps: 30}, top_realsense_depth: {type: opencv, index_or_path: /dev/video2, width: 640, height: 480, fps: 30}, top_webcam: {type: opencv, index_or_path: /dev/video6, width: 640, height: 480, fps: 30}}"  --robot.right_arm_config.cameras="{ wrist_right: {type: opencv, index_or_path: /dev/wrist_right, width: 640, height: 480, fps: 30}}"   --robot.left_arm_config.cameras="{ wrist_left: {type: opencv, index_or_path: /dev/wrist_left, width: 640, height: 480, fps: 30}}"  --task=${TASK}   --server_address=10.145.8.86:8080   --policy_type=groot  --pretrained_name_or_path=${HF_USER}/${POLICY}-${REPO}   --policy_device=cuda   --actions_per_chunk=16 --debug_visualize_queue_size=true --robot.id=follower`

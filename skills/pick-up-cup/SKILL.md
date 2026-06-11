@@ -13,7 +13,7 @@ Use this pick-up-cup skill whenever:
 ## How to Use
 
 When you invoke the pick-up-cup skill, it will:
-1. Locate the cup on the table.
+1. Locate the cup on the table. Decide which arm to use based on the cup's position and the robot's configuration. If the cup is on the right side, use the right arm; if it's on the left side, use the left arm.
 2. Plan a path for the robot's arm to reach the cup.
 3. Execute the motion to pick up the cup by the handle.
 
@@ -28,17 +28,25 @@ When you invoke the pick-up-cup skill, it will:
 
 ## Setup
 
+
+If the cup is expected to be on the right side, set up the right arm pick-up-cup skill:
 ```bash
-export SKILL="pick-up-cup" 
-export PROMPT_FILE="/openclaw/groot_prompt.json"
+export SKILL="pick-up-cup-right-arm" 
 export TASK=$(python3 -c "import json; d=json.load(open('$PROMPT_FILE')); print(d['$SKILL']['task'])")
 export REPO=$(python3 -c "import json; d=json.load(open('$PROMPT_FILE')); print(d['$SKILL']['repo-id'])")
 ```
 
+Else, if the cup is expected to be on the left side, set up the left arm pick-up-cup skill:
+```bash
+export SKILL="pick-up-cup-left-arm"
+export TASK=$(python3 -c "import json; d=json.load(open('$PROMPT_FILE')); print(d['$SKILL']['task'])")
+export REPO=$(python3 -c "import json; d=json.load(open('$PROMPT_FILE')); print(d['$SKILL']['repo-id'])")
+``` 
+
 Then deploy:
 
 ```bash
-bash /openclaw/deploy_groot_prompt.sh
+bash ./skills/robot-client/scripts/deploy_groot_prompt.sh
 ```
 
 
