@@ -10,9 +10,5 @@
     "stack-cup": {
         "task": "Stack the cup",
         "repo-id": "oliveoil8888/groot-stack-cup"
-    },
-    "knock-on-wood": {
-        "task": "Knock on the wooden table",
-        "repo-id": "oliveoil8888/groot-knock_on_wood"
     }
 }

@@ -46,7 +46,7 @@ export REPO=$(python3 -c "import json; d=json.load(open('$PROMPT_FILE')); print(
 Then deploy:
 
 ```bash
-bash ./skills/robot-client/scripts/deploy_groot_prompt.sh
+bash $DEPLOY_GROOT_PROMPT_SCRIPT
 ```
 
 
