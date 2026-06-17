@@ -1,7 +1,10 @@
 
 #!/bin/bash
 
-echo "Groot simulation running. SKILL=${SKILL}, TASK=${TASK}, REPO=${REPO}"
+# Instructions for OpenClaw Agent: This bash script deploys the Groot policy on the robot client. Ensure you have exported the shell variables SKILL, TASK, and REPO.
+# Example usage: export SKILL=pick-and-place; export TASK="Pick up the cube and place it in the box."; export REPO="hf-user/groot-pick-and-place"
+
+echo "Groot policy deployment initializing... SKILL=${SKILL}, TASK=${TASK}, REPO=${REPO}"
 
 ssh kibub@kibub "source ~/miniforge3/etc/profile.d/conda.sh && conda run -n lerobot python -m lerobot.async_inference.robot_client \
     --robot.type=bi_so_follower  \

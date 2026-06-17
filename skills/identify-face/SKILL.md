@@ -44,7 +44,7 @@ Each subfolder name becomes the person's identity label. Multiple images per per
 Run the helper script to initialize the directory structure:
 
 ```bash
-bash robot/skills/identify-face/scripts/setup_known_faces.sh
+bash skills/identify-face/scripts/setup_known_faces.sh
 ```
 
 ## Example Interaction

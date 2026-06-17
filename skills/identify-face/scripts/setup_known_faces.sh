@@ -5,7 +5,7 @@
 # Run this once to get started, then add subfolders with reference photos for each person.
 #
 # Usage:
-#   bash robot/skills/identify_face/scripts/setup_known_faces.sh
+#   bash skills/identify-face/scripts/setup_known_faces.sh
 
 set -euo pipefail
 
@@ -34,7 +34,7 @@ echo "       - Include a variety of angles / lighting conditions"
 echo "       - Avoid group photos (one person per image)"
 echo ""
 echo "  5. Test the skill:"
-echo "       python robot/skills/identify_face/scripts/detect.py --image /path/to/test/photo.jpg"
+echo "       python skills/identify-face/scripts/detect.py --image /path/to/test/photo.jpg"
 echo ""
 echo "Current database contents:"
 if [ -z "$(ls -A "${KNOWN_FACES_DIR}" 2>/dev/null)" ]; then
