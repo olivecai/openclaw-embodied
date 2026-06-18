@@ -1,3 +1,3 @@
-[submodule "skills/diff-drive/kibub-diff-drive"]
-	path = skills/diff-drive/kibub-diff-drive
-	url = git@github.com:olivecai/kibub-diff-drive.git
+[submodule "skills/diff-drive/kibub_diff_drive"]
+	path = skills/diff-drive/kibub_diff_drive
+	url = git@github.com:olivecai/kibub_diff_drive.git
