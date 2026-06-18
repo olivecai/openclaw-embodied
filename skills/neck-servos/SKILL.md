@@ -23,9 +23,10 @@ Prior to running the neck-servos skill, run the following command:
 `ssh kibub@kibub "export PYTHONPATH=/home/kibub/kibub-neck-servos/python-st3215:$PYTHONPATH"`
 
 
-### Get current servo positions:
+### Neck servo positions:
 The neck servos have step counts between 0 and 4095, where 2048 is the center position. The yaw servo is centered at 2048, with lower values turning left and higher values turning right. The pitch servo is also centered at 2048, with higher values tilting down and lower values tilting up. To see the table, set pitch = 2600. To see a person standing, set pitch = 1900. To look about 45 degrees to the left, set yaw = 1700. To look about 45 degrees to the right, set yaw = 2300.  
 
+### Get current servo positions:
 To get the current servo positions, set AXIS=yaw or AXIS=pitch and run `ssh kibub@kibub "export PYTHONPATH=/home/kibub/kibub-neck-servos/python-st3215:$PYTHONPATH; source ~/miniforge3/etc/profile.d/conda.sh && conda run -n lerobot python /home/kibub/kibub-neck-servos/get-servo-pos.py --axis $AXIS"`.
 
 ### Adjust the neck servos:

@@ -18,38 +18,39 @@ When you invoke the diff-drive skill, it will:
 
 ## Setup and Usage
 
-### Drive forward:
+Firstly, start up the differential drive host on the robot by running: `ssh kibub@kibub "source ~/miniforge3/etc/profile.d/conda.sh && conda run -n lerobot python /home/kibub/kibub_diff_drive/diffdrive_host.py --robot.port=/dev/diff_drive`
+
+Then, wait a few seconds to ensure the differential driver host is running.
+
+Decide the linear and angular velocities (m/s) of the robot and the duration (s) to send those velocities to the wheels. For example, to drive forward for 5 seconds:
+
+```
+DD_XVEL=2.0
+DD_AVEL=0.0
+DD_DUR=5.0
 
 
+python skills/diff-drive/diff-driver.py --x_vel=${DD_XVEL} --theta_vel=${DD_AVEL} --duration=${DD_DUR}`
+```
 
-### Set up the terminal environment:
-Prior to running the neck-servos skill, run the following command:
-`ssh kibub@kibub "export PYTHONPATH=/home/kibub/kibub-neck-servos/python-st3215:$PYTHONPATH"`
+## Presets for linear and angular velocities: <TODO>
 
-### Neck servo positions:
-The neck servos have step counts between 0 and 4095, where 2048 is the center position. The yaw servo is centered at 2048, with lower values turning left and higher values turning right. The pitch servo is also centered at 2048, with higher values tilting down and lower values tilting up. To see the table, set pitch = 2600. To see a person standing, set pitch = 1900. To look about 45 degrees to the left, set yaw = 1700. To look about 45 degrees to the right, set yaw = 2300.  
+Drive forward: 
 
-### Get current servo positions:
+DD_XVEL=2.0
+DD_AVEL=0.0
+DD_DUR=5.0
 
-To get the current servo positions, set AXIS=yaw or AXIS=pitch and run `ssh kibub@kibub "export PYTHONPATH=/home/kibub/kibub-neck-servos/python-st3215:$PYTHONPATH; source ~/miniforge3/etc/profile.d/conda.sh && conda run -n lerobot python /home/kibub/kibub-neck-servos/get-servo-pos.py --axis $AXIS"`.
+Turn 90 degrees clockwise:
 
-### Adjust the neck servos:
-Then you can run the script to adjust the neck servos: set AXIS=yaw or AXIS=pitch, and specify the amount to move or nudge using either '--moveto' or '--nudge' followed by the amount. If you would like to move the head to a certain location, use '--moveto' followed by the amount. If you would instead like to adjust the neck servos, use 'nudge' followed by the amount. 
-
-For example, to nudge the yaw by 10 steps, run `ssh kibub@kibub "export PYTHONPATH=/home/kibub/kibub-neck-servos/python-st3215:$PYTHONPATH; source ~/miniforge3/etc/profile.d/conda.sh && conda run -n lerobot python /home/kibub/kibub-neck-servos/servo_controller.py --axis yaw --nudge 10"`.
-For example, to move the pitch to step position 2148, run `ssh kibub@kibub "export PYTHONPATH=/home/kibub/kibub-neck-servos/python-st3215:$PYTHONPATH; source ~/miniforge3/etc/profile.d/conda.sh && conda run -n lerobot python /home/kibub/kibub-neck-servos/servo_controller.py --axis pitch --moveto 2148"`.
+DD_XVEL=0.0
+DD_AVEL=1.5
+DD_DUR=5.0
 
 
 ## Example
 
-> Robot detects a person but the face is not fully visible. It invokes the neck-servos skill to adjust the camera angle for a better view.
-> Robot says: "Let me adjust my camera angle to see you better."
-> Agent executes command to bring the pitch to position 1900: `ssh kibub@kibub "export PYTHONPATH=/home/kibub/kibub-neck-servos/python-st3215:$PYTHONPATH; source ~/miniforge3/etc/profile.d/conda.sh && conda run -n lerobot python /home/kibub/kibub-neck-servos/servo_controller.py --axis pitch --moveto 1900"`
-> Robot successfully adjusts the neck servos, likely by tilting the pitch of the neck up, and now has a clear view of the person's face for identification or interaction.
-
-> Robot is trying to find an object for a pick-and-place task but cannot see it. It invokes the neck-servos skill to reposition the camera.
-> Robot says: "I'm losing sight of the object. Let me adjust my camera to keep tracking it."
-> Agent executes command to look to the right by nudging the yaw by 100 steps: `ssh kibub@kibub "export PYTHONPATH=/home/kibub/kibub-neck-servos/python-st3215:$PYTHONPATH; source ~/miniforge3/etc/profile.d/conda.sh && conda run -n lerobot python /home/kibub/kibub-neck-servos/servo_controller.py --axis yaw --nudge 100"`
-> Robot looks for the object but still cannot find it. It invokes the neck-servos skill again to reposition the camera.
-> Agent executes command to look to the left by nudging the yaw by -200 steps: `ssh kibub@kibub "export PYTHONPATH=/home/kibub/kibub-neck-servos/python-st3215:$PYTHONPATH; source ~/miniforge3/etc/profile.d/conda.sh && conda run -n lerobot python /home/kibub/kibub-neck-servos/servo_controller.py --axis yaw --nudge -200"`
-> Robot can now see the object, and proceeds to plan the pick-and-place task successfully.
+> Robot can see the table but it is far away. It invokes the diff-driver skill to drive closer to the table.
+> Robot says: "Let me drive closer to the table to interact with the objects on it."
+> Agent executes command to drive straight forward: `ssh kibub@kibub "source ~/miniforge3/etc/profile.d/conda.sh && conda run -n lerobot python /home/kibub/kibub_diff_drive/diffdrive_host.py --robot.port=/dev/diff_drive; echo "Sleeping for 5 seconds to ensure the differential driver host can connect." ; sleep 5; python skills/diff-drive/diff-driver.py --x_vel=5 --theta_vel=0 --duration=5`
+> Robot successfully comes closer to the table and can complete a pick and place task.
