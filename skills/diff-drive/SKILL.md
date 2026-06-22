@@ -18,19 +18,19 @@ When you invoke the diff-drive skill, it will:
 
 ## Setup and Usage
 
-Firstly, start up the differential drive host on the robot by running: `ssh kibub@kibub "source ~/miniforge3/etc/profile.d/conda.sh && conda run -n lerobot python /home/kibub/kibub_diff_drive/diffdrive_host.py --robot.port=/dev/diff_drive`
+Firstly, start up the differential drive host on the robot by running: `ssh kibub@kibub "source ~/miniforge3/etc/profile.d/conda.sh && conda run -n lerobot python /home/kibub/kibub_diff_drive/diffdrive_host.py --robot.port=/dev/diff_drive"`
 
 Then, wait a few seconds to ensure the differential driver host is running.
 
-Decide the linear and angular velocities (m/s) of the robot and the duration (s) to send those velocities to the wheels. For example, to drive forward for 5 seconds:
+Decide the linear and angular velocities (m/s) of the robot and the duration (s) to send those velocities to the wheels. For example, to drive forward for 5 seconds, run the following commands in the current working directory:
 
 ```
-DD_XVEL=2.0
-DD_AVEL=0.0
-DD_DUR=5.0
+DD_XVEL=30.0
+DD_AVEL=30.0
+DD_DUR=10.0
+KIBUBIP=$(cat KIBUB_IP) 
 
-
-python skills/diff-drive/diff-driver.py --x_vel=${DD_XVEL} --theta_vel=${DD_AVEL} --duration=${DD_DUR}`
+python skills/diff-drive/diff-driver.py --x_vel=${DD_XVEL} --theta_vel=${DD_AVEL} --duration=${DD_DUR} --remote_ip=${KIBUBIP}
 ```
 
 ## Presets for linear and angular velocities: <TODO>
