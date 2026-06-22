@@ -32,8 +32,13 @@ def main():
             sys.exit(1)
 
         print("Driving forward...")
-        wheels.drive(x_vel=x_vel, theta_vel=theta_vel)  # 0.1 m/s forward, no turning
-        time.sleep(duration)
+        end_time = time.time() + duration
+
+        while time.time() < end_time:
+            wheels.drive(x_vel=x_vel, theta_vel=theta_vel)
+            time.sleep(0.05)   # 20 Hz
+
+        wheels.stop()
 
         print("Stopping...")
         wheels.stop()
