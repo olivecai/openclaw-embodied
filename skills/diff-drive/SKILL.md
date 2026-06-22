@@ -18,39 +18,40 @@ When you invoke the diff-drive skill, it will:
 
 ## Setup and Usage
 
-Firstly, start up the differential drive host on the robot by running: `ssh kibub@kibub "source ~/miniforge3/etc/profile.d/conda.sh && conda run -n lerobot python /home/kibub/kibub_diff_drive/diffdrive_host.py --robot.port=/dev/diff_drive"`
-
-Then, wait a few seconds to ensure the differential driver host is running.
-
 Decide the linear and angular velocities (m/s) of the robot and the duration (s) to send those velocities to the wheels. For example, to drive forward for 5 seconds, run the following commands in the current working directory:
 
 ```
-DD_XVEL=30.0
-DD_AVEL=30.0
-DD_DUR=10.0
-KIBUBIP=$(cat KIBUB_IP) 
+export DD_XVEL=30.0
+export DD_AVEL=0.0
+export DD_DUR=5.0
 
-python skills/diff-drive/diff-driver.py --x_vel=${DD_XVEL} --theta_vel=${DD_AVEL} --duration=${DD_DUR} --remote_ip=${KIBUBIP}
+./skills/diff-drive/diff-drive.sh
+
 ```
 
-## Presets for linear and angular velocities: <TODO>
+## Presets for linear and angular velocities: 
 
 Drive forward: 
 
-DD_XVEL=2.0
-DD_AVEL=0.0
-DD_DUR=5.0
+export DD_XVEL=50.0
+export DD_AVEL=0.0
+export DD_DUR=5.0
 
 Turn 90 degrees clockwise:
 
-DD_XVEL=0.0
-DD_AVEL=1.5
-DD_DUR=5.0
+export DD_XVEL=0.0
+export DD_AVEL=-100.0
+export DD_DUR=3.0
+
+To dance:
+export DD_XVEL=0.0
+export DD_AVEL=100.0
+export DD_DUR=10.0
 
 
 ## Example
 
 > Robot can see the table but it is far away. It invokes the diff-driver skill to drive closer to the table.
 > Robot says: "Let me drive closer to the table to interact with the objects on it."
-> Agent executes command to drive straight forward: `ssh kibub@kibub "source ~/miniforge3/etc/profile.d/conda.sh && conda run -n lerobot python /home/kibub/kibub_diff_drive/diffdrive_host.py --robot.port=/dev/diff_drive; echo "Sleeping for 5 seconds to ensure the differential driver host can connect." ; sleep 5; python skills/diff-drive/diff-driver.py --x_vel=5 --theta_vel=0 --duration=5`
+> Agent executes command to drive straight forward: `export DD_XVEL=50; export DD_AVEL=0; export DD_DUR=5.0; ./skills/diff-drive/diff-drive.sh`
 > Robot successfully comes closer to the table and can complete a pick and place task.
