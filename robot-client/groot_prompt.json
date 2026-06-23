@@ -10,5 +10,9 @@
     "stack-cup": {
         "task": "Stack the cup",
         "repo-id": "oliveoil8888/groot-stack-cup"
+    },
+    "press-red-button": {
+        "task": "Press the button",
+        "repo-id": "oliveoil8888/groot-press-red-button"
     }
 }

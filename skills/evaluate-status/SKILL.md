@@ -27,7 +27,13 @@ GET /images/{key}
 
 The API is served from `policy_server.py` alongside the gRPC policy server. It exposes the latest raw observation received from the robot client.
 If the robot client is actively rolling out a policy, the gRPC server will continuously receive new observations and update the latest observation served by the HTTP API. Then, the agent only needs to query the API to get the most recent observation and evaluate the robot's status and environment based on the images and metadata in the observation.
-Else, a current observation and status can be acquired by running `./skills/robot-client/scripts/robot_status_snapshot.sh`, which triggers a single observation to the policy server.
+Else, when no policy is rolling out, **the API will be down** — `curl` calls will fail or return connection errors. In this case, first fire a single observation snapshot to the server before querying:
+
+```bash
+./robot-client/scripts/robot_status_snapshot.sh
+```
+
+Then proceed to query the API as normal.
 
 ## Workflow
 
@@ -147,7 +153,11 @@ Use to fetch a specific camera image.
 ```bash
 curl -s http://10.145.8.86:8001/images/top_color --output robot_top_color.jpg
 curl -s http://10.145.8.86:8001/images/top_depth --output robot_top_depth.jpg
+curl -s http://10.145.8.86:8001/images/wrist_left --output robot_wrist_left.jpg
+curl -s http://10.145.8.86:8001/images/wrist_right --output robot_wrist_right.jpg
 ```
+
+`wrist_left` and `wrist_right` provide close-up views of each gripper and are useful for confirming grasp state, object contact, and fine placement — especially when the top camera cannot resolve gripper details.
 
 ## Pick-and-Place Evaluation Criteria
 
